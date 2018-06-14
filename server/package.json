@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
     "create-tables": "node scripts/create-tables.js",
     "drop-tables": "node scripts/drop-tables.js",
     "recreate-tables": "npm run drop-tables && npm run create-tables",
@@ -12,6 +14,7 @@
     "db-load-all": "npm run recreate-tables && npm run seed-tables",
     "start:watch": "nodemon server.js",
     "start": "node server.js"
+    
   },
   "author": "",
   "license": "ISC",
